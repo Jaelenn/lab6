@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header class="center">
+    <h1>Welcome to Jaelenn's Volume Calculator</h1>
+  </header>
+
+  <div class="holy-grail">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="calculator" class="center">
+      <label for="length">Length:</label>
+      <input type="number" id="length" placeholder="Enter length">
+
+      <label for="width">Width:</label>
+      <input type="number" id="width" placeholder="Enter width">
+
+      <label for="height">Height:</label>
+      <input type="number" id="height" placeholder="Enter height">
+
+      <button onclick="calculateVolume()">Calculate Volume</button>
+      <p id="result">Volume: <span id="volumeValue"></span></p>
+    </main>
+
+    <aside>
+      <a href="https://www.amazon.com" target="_blank">
+        <img src="https://static.javatpoint.com/blog/images/how-to-calculate-volume-of-an-object.png" alt="Advertisement">
+      </a>
+    </aside>
+  </div>
+
+  <footer>
+    <p>
+      <strong>Addendum:</strong> 
+    This webpage features a volume calculator for a rectangular prism. The JavaScript code, 
+    located in the 'script.js' file, facilitates the calculation by taking user-inputted values for length, width, and height. 
+    The calculated volume is then displayed in the designated area. The implementation follows the Holy Grail layout, with a centered header, 
+    left-aligned navigation,  a centered main content area containing the calculator, a right-aligned advertisement, and a footer. 
+    The visual design is inspired by the Holy Grail design principles.
+  
+    In solving the problem, careful attention was paid to user input validation to ensure that only 
+    valid positive numbers are accepted for the calculation. The result is displayed in a formatted manner with two decimal places.
+    During development, the main challenge involved ensuring that the calculated volume was correctly displayed. 
+    This was addressed by refining the JavaScript code to correctly update the content of the designated span element 
+    ('volumeValue'). Additionally, proper validation was implemented to handle invalid inputs gracefully,
+    providing clear error messages to the user.
+    The webpage adheres to modern web design principles, providing a user-friendly interface for calculating 
+    volumes of rectangular prisms while maintaining an aesthetically pleasing and responsive layout.
+    </p>
+  </footer>
+  
